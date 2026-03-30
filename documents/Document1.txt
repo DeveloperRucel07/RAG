@@ -1,0 +1,7 @@
+Anleitung – Wie man einen internen Firmen-Chatbot nutzt
+
+Ein interner Chatbot kann Mitarbeitenden helfen, schnell Informationen zu finden.
+Um ihn zu nutzen, öffnet man einfach das Chatfenster im Intranet und gibt eine Frage ein, zum Beispiel „Wie beantrage ich Urlaub?“ oder „Wo finde ich die IT-Richtlinien?“.
+Der Chatbot greift auf interne Dokumente und Handbücher zu und liefert passende Antworten.
+Wenn keine passende Information vorhanden ist, zeigt er eine kurze Nachricht an und empfiehlt, den zuständigen Ansprechpartner zu kontaktieren.
+Für die beste Ergebnisqualität sollten Fragen klar und vollständig formuliert sein.i dem man einen Schritt zurücktritt.

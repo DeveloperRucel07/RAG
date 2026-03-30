@@ -1,0 +1,8 @@
+Anweisung – Richtlinien zur Passworterstellung
+
+Für alle Unternehmenskonten gilt eine verbindliche Passwortregel.
+Ein sicheres Passwort besteht aus mindestens 12 Zeichen und enthält Groß- und Kleinbuchstaben, Zahlen und Sonderzeichen.
+Es darf keine persönlichen Informationen enthalten, wie Namen oder Geburtsdaten.
+Passwörter müssen alle 90 Tage geändert werden.
+Das Wiederverwenden alter Passwörter ist nicht erlaubt.
+Zur sicheren Verwaltung wird empfohlen, einen zertifizierten Passwort-Manager zu verwenden.

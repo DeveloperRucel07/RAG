@@ -1,0 +1,7 @@
+Information – Datensicherung im Unternehmen
+
+Regelmäßige Datensicherung ist ein zentraler Bestandteil der IT-Sicherheit.
+Alle wichtigen Dateien auf den Firmenservern werden jede Nacht automatisch gesichert.
+Die Sicherungen werden verschlüsselt gespeichert und 30 Tage lang aufbewahrt.
+Mitarbeiter müssen keine manuelle Sicherung durchführen, sollten jedoch darauf achten, dass sie wichtige Dokumente im zentralen Netzlaufwerk und nicht nur lokal speichern.
+Bei Datenverlust oder versehentlichem Löschen kann die IT-Abteilung eine Wiederherstellung veranlassen.
