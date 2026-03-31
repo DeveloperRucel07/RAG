@@ -83,10 +83,39 @@ def sending_to_LLM(documents, userinput):
         raise RuntimeError(f"Error updating product description: {e}")
     
 
+def supabase_documents_get(prompt):
+    user_prompt_embedding = generate_embedding(prompt)
+    response = supabase.rpc(
+        "match_documents", {
+            "query_embedding": user_prompt_embedding,
+            "match_threshold": 0.78,
+            "match_count": 10
+        }
+    ).execute()
+
+    data = response.data
+
+    if not data:
+        return []
+
+    return [{"title": doc["title"], "body": doc["body"]} for doc in data]
+
+
+def rag_pipeline(user_input):
+
+    relevant_docs = supabase_documents_get(user_input)
+
+    if not relevant_docs:
+        print("Keine passenden Dokumente gefunden.")
+        return
+
+    answer = sending_to_LLM(relevant_docs, user_input)
+
+    return answer
+
 
 if __name__ == "__main__":
-    for file in os.listdir("documents"):
-        if file.endswith(".txt"):
-            textfile_to_string(os.path.join("documents", file))
-            print(f"Uploaded {file} to Supabase.")
-    print("All documents uploaded to Supabase.")
+    user_input = input("Gib deine Frage ein: ")
+    answer = rag_pipeline(user_input)
+    print("ANTWORT:\n", answer or "Keine Antwort generiert.")
+
